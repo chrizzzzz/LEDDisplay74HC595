@@ -4,7 +4,7 @@ This is a simple Arduino library for presenting a decimal number on a 4-bit LED 
 
 # Usage
 
-Put the contents of this repository in a folter named LEDDisplay74HC595 in the Arduino IDE's libraries folter. See the example file reachable when opening a file in the Arduino IDE Open -> libraries -> LEDDisplay74HC595 -> LEDDisplay74HC595Example.
+Put the contents of this repository in a folder named LEDDisplay74HC595 in the Arduino IDE's libraries folder. See the example file by opening it in the Arduino IDE: Open -> libraries -> LEDDisplay74HC595 -> LEDDisplay74HC595Example.
 
 The display uses three digital out pins on your Arduino.
 

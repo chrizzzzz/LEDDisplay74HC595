@@ -8,6 +8,8 @@ Put the contents of this repository in a folter named LEDDisplay74HC595 in the A
 
 The display uses three digital out pins on your Ardruino.
 
+The refresh(number, decimalPlaces) method rounds to specified decimals places. E.g. refresh(1.234, 1) displays as 1.2.
+
 ### Example
 
 ```

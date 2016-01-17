@@ -6,9 +6,9 @@ This is a simple Arduino library for presenting a decimal number on a 4-bit LED 
 
 Put the contents of this repository in a folter named LEDDisplay74HC595 in the Arduino IDE's libraries folter. See the example file reachable when opening a file in the Arduino IDE Open -> libraries -> LEDDisplay74HC595 -> LEDDisplay74HC595Example.
 
-The display uses three digital out pins on your Ardruino.
+The display uses three digital out pins on your Arduino.
 
-The refresh(number, decimalPlaces) method rounds to specified decimals places. E.g. refresh(1.234, 1) displays as 1.2.
+The refresh(number, decimalPlaces) method rounds to specified decimals places, e.g. refresh(1.234, 1) displays as 1.2.
 
 ### Example
 

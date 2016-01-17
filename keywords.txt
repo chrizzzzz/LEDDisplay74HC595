@@ -1,0 +1,7 @@
+# Datatypes (KEYWORD1)
+LEDDisplay74HC595	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+refresh	KEYWORD2
+
+# Constants (LITERAL1)

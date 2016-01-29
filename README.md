@@ -10,9 +10,9 @@ The display uses three digital out pins on your Arduino.
 
 The refresh(number, decimalPlaces) method rounds to specified decimals places, e.g. refresh(1.234, 1) displays as 1.2.
 
-### Example
+#### Example
 
-```
+```C++
 #include <LEDDisplay74HC595.h>
 
 const int sclkPin = 4;
@@ -37,6 +37,22 @@ void loop() {
 # No state
 
 The display does not have a state for all digits; this means that you have to refresh the number value continuously in your sketch.
+
+A tip is to use timer interrupts to drive the display to avoid flicker when you need to process other stuff as well.
+
+#### Example
+```C++
+#include <TimerOne.h>
+//...
+void setup() {
+  //...
+  Timer1.initialize(5000);
+  Timer1.attachInterrupt(refreshDisplay);
+}
+void refreshDisplay() {
+  ledDisplay.refresh(myValue, 1);
+}
+```
 
 # License
 

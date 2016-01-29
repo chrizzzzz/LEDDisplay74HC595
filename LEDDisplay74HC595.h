@@ -22,6 +22,7 @@ private:
   int _shiftClock;
   int _resetClock;
   int _displayIO;
+  byte _refreshDigitIndex;
   void setError();
   void setDisplayByte(byte displayByte, int pos);
 };

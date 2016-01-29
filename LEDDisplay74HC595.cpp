@@ -50,6 +50,7 @@ LEDDisplay74HC595::LEDDisplay74HC595(int sclk, int rclk, int dio)
   _shiftClock = sclk;
   _resetClock = rclk;
   _displayIO = dio;
+  _refreshDigitIndex = 0;
 }
 
 void LEDDisplay74HC595::refresh(float number, int decimalPlaces)
@@ -114,10 +115,9 @@ void LEDDisplay74HC595::refresh(float number, int decimalPlaces)
     displayBytes[decimalPos] ^= 0x80; // add decimal point bit at the decimal position
   }
 
-  // set the digit characters to the LED display
-  for(i = 0; i < 4; i++) {
-    setDisplayByte(displayBytes[i], i);
-  }
+  // set the current digit character to the LED display
+  byte digitIndex = _refreshDigitIndex++ % 4;
+  setDisplayByte(displayBytes[digitIndex], digitIndex);
 
 }
 

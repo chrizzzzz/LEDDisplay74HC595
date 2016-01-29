@@ -1,6 +1,6 @@
 # Arduino Library for a 4-bit LED Digital Tube Module
 
-This is a simple Arduino library for presenting a decimal number on a 4-bit LED Digital Tube Module that uses two 74HC595 shift registers. It's an unknown brand but can be baught on various sites on the net.
+This is a simple Arduino library for presenting a decimal number on a 4-bit LED Digital Tube Module that uses two 74HC595 shift registers. It's an unknown brand but can be bought on various sites on the net.
 
 # Usage
 
